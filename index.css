@@ -25,3 +25,55 @@ html {
 body {
   margin: 0;
 }
+
+header {
+  background-color: var(--pink-light);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: var(--header-height);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+header > div {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.home-ref {
+  color: var(--pink-dark);
+  font-weight: bold;
+  width: 10%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.RSVP-ref {
+  background: var(--pink-dark);
+  width: 10%;
+  height: 40%;
+  padding: 5px;
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media all and (max-width: 600px) {
+  header > div {
+    width: 70%;
+  }
+
+  .RSVP-ref {
+    width: 20%;
+    height: 50%;
+  }
+}

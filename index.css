@@ -1,0 +1,27 @@
+:root {
+  --header-height: 100px;
+  --title-height: 5vh;
+  --blue-light: #daebe3;
+  --blue-dark: #99cdd8;
+  --green-light: #cfd6c4;
+  --green-dark: #657166;
+  --pink-light: #fde8d3;
+  --pink-dark: #f3c3b2;
+  --text-color: #fff;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+
+html {
+  font-size: clamp(14px, 3vw, 20px);
+  line-height: 1rem;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}

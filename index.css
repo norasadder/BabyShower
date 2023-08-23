@@ -1,21 +1,23 @@
 :root {
   --header-height: 80px;
   --title-height: 5vh;
-  --blue-light: #daebe3;
-  --blue-dark: #99cdd8;
-  --green-light: #cfd6c4;
-  --green-dark: #657166;
-  --pink-light: #fde8d3;
-  --pink-dark: #f3c3b2;
+  --blue-light: #50757b;
+  --blue-dark: #2e4b5f;
+  --petro-light: #7d9e9fa0;
+  --petro-dark: #21495e;
+  --peach-light: #f0e4d0;
+  --peach-dark: #ac8272;
+  --peach-dark-opacity: #dcad99b1;
   --text-color: #fff;
   --dark-text-color-pink: #c38a75;
+  --very-light-peach: #f5eee3;
 }
 
 * {
   font-family: sans-serif;
   font-weight: light;
   text-decoration: none;
-  color: var(--green-dark);
+  color: var(--blue-dark);
   text-align: center;
 }
 
@@ -24,7 +26,7 @@ h1 {
 }
 
 html {
-  font-size: clamp(14px, 3vw, 20px);
+  font-size: clamp(12px, 3vw, 20px);
   line-height: 1.75rem;
   margin: 0;
   scroll-behavior: smooth;
@@ -35,7 +37,7 @@ body {
 }
 
 header {
-  background-color: var(--pink-light);
+  background-color: var(--peach-light);
   position: fixed;
   top: 0;
   width: 100%;
@@ -55,7 +57,6 @@ header > div {
 }
 
 .home-ref {
-  /* font-weight: bold; */
   width: 10%;
   height: 40%;
   display: flex;
@@ -64,7 +65,7 @@ header > div {
 }
 
 .RSVP-header {
-  background: var(--pink-dark);
+  background: var(--blue-light);
   width: 10%;
   height: 40%;
   padding: 5px;
@@ -75,16 +76,19 @@ header > div {
 }
 
 .home-section {
-  background-color: var(--blue-light);
+  background-color: var(--peach-light);
   padding-top: calc(var(--header-height) + 10px);
+  padding-bottom: 2%;
+  width: 100vw;
 }
 
 .home-Img-container {
   background-image: url(images/HomeBG.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   height: 80vh;
   margin: 0;
+  width: 100vw;
 }
 
 .home-section > h1 {
@@ -93,6 +97,11 @@ header > div {
   padding: 0;
   line-height: 6.2rem;
   margin: 0;
+  color: var(--blue-light);
+}
+
+.invitation-p {
+  color: var(--blue-light);
 }
 
 .slideshow-container {
@@ -115,27 +124,13 @@ header > div {
   width: auto;
 }
 
-/* .fade {
-  animation-name: fade;
-  animation-duration: 0.5s;
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-} */
-
 .nameBabyShower-p {
   font-size: 1.5rem;
   margin: 0;
 }
 
 .RSVP-home {
-  background-color: var(--pink-dark);
+  background-color: var(--blue-light);
   color: var(--text-color);
   width: 15%;
   display: block;
@@ -145,7 +140,12 @@ header > div {
 }
 
 .event-info-section {
-  background-color: var(--green-light);
+  background-color: var(--peach-light);
+  background-image: url(images/footerBG.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding-top: 10%;
 }
 
@@ -153,12 +153,15 @@ header > div {
   font-size: 3.25rem;
   line-height: 3.25rem;
   margin: 1%;
+  color: var(--text-color);
 }
 
 .event-info-section > p {
   width: 33%;
   margin: auto;
   line-height: 1.5rem;
+  color: var(--text-color);
+  font-weight: bolder;
 }
 
 .event-details-grid {
@@ -166,16 +169,14 @@ header > div {
   grid-template-columns: repeat(2, 1fr);
   width: 90%;
   margin: auto;
-  height: 55vh;
   margin-top: 7%;
-  margin-bottom: 0;
 }
 
-.RSPV-event-info {
+.RSVP-event-info {
   width: 90%;
   margin: auto;
   margin-top: 0;
-  background-color: var(--pink-dark);
+  background-color: var(--blue-light);
   color: var(--text-color);
   height: 6vh;
   display: block;
@@ -184,12 +185,13 @@ header > div {
 }
 
 .when {
-  background-color: #ffffff3e;
+  background-color: #f4e2e29b;
   padding-top: 5%;
+  height: 50vh;
 }
 
 .clock-icon-container {
-  height: 25%;
+  height: 20%;
 }
 
 .clock-icon-container > img {
@@ -199,29 +201,28 @@ header > div {
 
 .when-details > h1 {
   font-size: 3.25rem;
-  line-height: 3.25rem;
+  line-height: 4rem;
   margin: 0;
+  margin-top: 2%;
+  color: var(--blue-dark);
+  margin-bottom: 30px;
 }
 
 .when-details > p {
   margin: auto;
+  line-height: 1.5rem;
+  margin-bottom: 0;
+  color: var(--blue-dark);
 }
 
 .where {
   padding-top: 5%;
-  background-color: var(--green-dark);
-}
-
-.where h1 {
-  color: var(--green-light);
-}
-
-.where p {
-  color: var(--green-light);
+  background-color: var(--peach-dark-opacity);
+  height: 50vh;
 }
 
 .pin-icon-container {
-  height: 25%;
+  height: 20%;
 }
 
 .pin-icon-container > img {
@@ -231,20 +232,29 @@ header > div {
 
 .where-details > h1 {
   font-size: 3.25rem;
-  line-height: 3.25rem;
+  line-height: 4rem;
   margin: 0;
   margin-top: 2%;
+  color: var(--blue-dark);
+  margin-bottom: 30px;
 }
 
 .where-details > p {
   margin-top: 1%;
   width: 70%;
   margin: auto;
+  line-height: 1.5rem;
+  margin-bottom: 0;
+  color: var(--blue-dark);
 }
 
 .decorative {
-  min-height: 100vh;
-  background-image: url(images/HomeBG.png);
+  background-color: var(--peach-light);
+}
+
+.decorative-img-container {
+  height: 100vh;
+  background-image: url(images/decoration.png);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -252,13 +262,33 @@ header > div {
 }
 
 footer {
-  background-color: var(--pink-light);
-  height: 70vh;
+  background-color: var(--peach-light);
+  height: 90vh;
+  background-image: url(images/footerBG.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-footer > h1 {
+.container > h1 {
   padding-top: 4%;
   margin: 0;
+  color: var(--blue-dark);
+}
+
+.container {
+  height: 70%;
+  width: 80%;
+  background-color: var(--peach-dark-opacity);
+  margin: auto;
+}
+
+.container p {
+  color: var(--blue-dark);
 }
 
 .questions-form {
@@ -281,10 +311,11 @@ input {
   background-color: transparent;
   border: none;
   padding-bottom: 3%;
-  border-bottom: 3px solid var(--green-dark);
-  color: var(--green-dark);
+  border-bottom: 3px solid var(--blue-dark);
+  color: var(--blue-dark);
   text-align: left;
   font-size: 0.8rem;
+  width: 100%;
 }
 
 input:focus {
@@ -297,7 +328,20 @@ input:focus {
   text-align: center;
   border: none;
   padding-top: 1%;
-  border-top: 3px solid var(--green-dark);
+  border-top: 3px solid var(--blue-dark);
+  cursor: pointer;
+}
+
+@media all and (max-width: 1000px) {
+  .home-Img-container {
+    background-size: contain;
+    height: 50vh;
+  }
+
+  .decorative-img-container {
+    background-size: contain;
+    height: 60vh;
+  }
 }
 
 @media all and (max-width: 600px) {
@@ -305,8 +349,48 @@ input:focus {
     width: 70%;
   }
 
-  .RSVP-ref {
-    width: 20%;
+  .RSVP-header {
+    width: 25%;
     height: 50%;
+  }
+
+  .container {
+    height: 50%;
+    /* margin-top: 20%; */
+  }
+
+  .RSVP-home {
+    width: 40%;
+  }
+
+  .RSVP-event-info {
+    height: 7%;
+  }
+
+  .when-details > h1 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+
+  .when-details > p {
+    line-height: 1.5rem;
+  }
+  .where-details > h1 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+
+  .where-details > p {
+    line-height: 1.5rem;
+  }
+
+  .decorative-img-container {
+    background-size: contain;
+    height: 40vh;
+  }
+
+  .home-Img-container {
+    background-size: contain;
+    height: 30vh;
   }
 }

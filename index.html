@@ -22,7 +22,7 @@
     <header>
       <div>
         <a href="#" class="home-ref">Home</a>
-        <a href="" class="RSVP-header"> RSVP </a>
+        <a href="eventDetails.html" class="RSVP-header"> RSVP </a>
       </div>
     </header>
     <main>
@@ -31,17 +31,17 @@
         <p class="invitation-p">"You're Invited to"</p>
         <div class="home-Img-container">
           <div class="slideshow-container">
-            <div class="slideshow fade">
+            <div class="slideshow">
               <img src="images/pregnant.png" />
             </div>
-            <div class="slideshow fade">
+            <div class="slideshow">
               <img src="images/born.png" />
             </div>
           </div>
         </div>
         <p class="nameBabyShower-p">LOLO’S BABY SHOWER</p>
         <p>Jun 23, 2035, 11:00 AM</p>
-        <a href="" class="RSVP-home">RSVP NOW</a>
+        <a href="eventDetails.html" class="RSVP-home">RSVP NOW</a>
       </section>
 
       <section class="event-info-section">
@@ -75,7 +75,7 @@
             </div>
           </div>
         </div>
-        <a href="" class="RSPV-event-info">RSPV NOW</a>
+        <a href="eventDetails.html" class="RSVP-event-info">RSVP NOW</a>
       </section>
 
       <section class="decorative">
@@ -85,38 +85,19 @@
       <section class="brands"></section>
     </main>
     <footer>
-      <h1>QUESTIONS?</h1>
-      <p>Call Mariana at 123-456-7890 or leave us a message</p>
-      <form class="questions-form">
-        <div class="form-grid">
-          <input type="text" name="name" placeholder="Name" required />
-          <input type="text" name="message" placeholder="Message" required />
-          <input type="text" name="email" placeholder="Email" required />
-          <input type="text" name="phone" placeholder="Phone" />
-        </div>
-        <input type="submit" value="Send" class="sendButton" />
-      </form>
+      <div class="container">
+        <h1>QUESTIONS?</h1>
+        <p>Call Mariana at 123-456-7890 or leave us a message</p>
+        <form class="questions-form">
+          <div class="form-grid">
+            <input type="text" name="name" placeholder="Name" required />
+            <input type="text" name="message" placeholder="Message" required />
+            <input type="text" name="email" placeholder="Email" required />
+            <input type="text" name="phone" placeholder="Phone" />
+          </div>
+          <input type="submit" value="Send" class="sendButton" />
+        </form>
+      </div>
     </footer>
-
-    <!-- <script>
-    let slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("slideshow");
-
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {
-    slideIndex = 1;
-  }
-
-  slides[slideIndex - 1].style.display = "block";
-  setTimeout(showSlides, 1000); // Change image every 1 seconds
-}
-</script> -->
   </body>
 </html>

@@ -254,13 +254,11 @@ header > div {
 
 .decorative-img-container {
   height: 100vh;
-  background-image: url(images/decoration2.png);
+  background-image: url(images/decoration.png);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
-
-  /* width: 100%; */
+  background-size: cover;
 }
 
 footer {
@@ -336,7 +334,13 @@ input:focus {
 
 @media all and (max-width: 1000px) {
   .home-Img-container {
-    height: 40vh;
+    background-size: contain;
+    height: 50vh;
+  }
+
+  .decorative-img-container {
+    background-size: contain;
+    height: 60vh;
   }
 }
 
@@ -352,7 +356,7 @@ input:focus {
 
   .container {
     height: 50%;
-    margin-top: 20%;
+    /* margin-top: 20%; */
   }
 
   .RSVP-home {
@@ -381,11 +385,12 @@ input:focus {
   }
 
   .decorative-img-container {
-    /* background-size: contain; */
+    background-size: contain;
     height: 40vh;
   }
 
   .home-Img-container {
+    background-size: contain;
     height: 30vh;
   }
 }

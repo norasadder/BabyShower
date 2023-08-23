@@ -2,7 +2,6 @@ let slideIndex = 0;
 showSlides();
 
 function showSlides() {
-  //   alert("hello");
   let i;
   let slides = document.getElementsByClassName("slideshow");
 

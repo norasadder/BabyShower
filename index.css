@@ -254,7 +254,7 @@ header > div {
 
 .decorative-img-container {
   height: 100vh;
-  background-image: url(images/decoration.png);
+  background-image: url(images/decoration2.png);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -336,7 +336,7 @@ input:focus {
 
 @media all and (max-width: 1000px) {
   .home-Img-container {
-    height: 50vh;
+    height: 40vh;
   }
 }
 
@@ -381,6 +381,7 @@ input:focus {
   }
 
   .decorative-img-container {
+    /* background-size: contain; */
     height: 40vh;
   }
 

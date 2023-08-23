@@ -1,12 +1,22 @@
 :root {
   --header-height: 80px;
   --title-height: 5vh;
-  --blue-light: #daebe3;
+  /* --blue-light: #daebe3;
   --blue-dark: #99cdd8;
   --green-light: #cfd6c4;
   --green-dark: #657166;
   --pink-light: #fde8d3;
   --pink-dark: #f3c3b2;
+  --text-color: #fff;
+  --dark-text-color-pink: #c38a75; */
+
+  --blue-light: #50757b;
+  --blue-dark: #2e4b5f;
+  --petro-light: #7d9e9fa0;
+  --petro-dark: #21495e;
+  --peach-light: #f0e4d0;
+  --peach-dark: #ac8272;
+  --peach-dark-opacity: #dcad998d;
   --text-color: #fff;
   --dark-text-color-pink: #c38a75;
 }
@@ -15,7 +25,7 @@
   font-family: sans-serif;
   font-weight: light;
   text-decoration: none;
-  color: var(--green-dark);
+  color: var(--blue-dark);
   text-align: center;
 }
 
@@ -35,7 +45,7 @@ body {
 }
 
 header {
-  background-color: var(--pink-light);
+  background-color: var(--peach-light);
   position: fixed;
   top: 0;
   width: 100%;
@@ -64,7 +74,7 @@ header > div {
 }
 
 .RSVP-header {
-  background: var(--pink-dark);
+  background: var(--blue-light);
   width: 10%;
   height: 40%;
   padding: 5px;
@@ -75,7 +85,7 @@ header > div {
 }
 
 .home-section {
-  background-color: var(--blue-light);
+  background-color: var(--peach-light);
   padding-top: calc(var(--header-height) + 10px);
 }
 
@@ -93,6 +103,11 @@ header > div {
   padding: 0;
   line-height: 6.2rem;
   margin: 0;
+  color: var(--blue-light);
+}
+
+.invitation-p {
+  color: var(--blue-light);
 }
 
 .slideshow-container {
@@ -115,27 +130,13 @@ header > div {
   width: auto;
 }
 
-/* .fade {
-  animation-name: fade;
-  animation-duration: 0.5s;
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-} */
-
 .nameBabyShower-p {
   font-size: 1.5rem;
   margin: 0;
 }
 
 .RSVP-home {
-  background-color: var(--pink-dark);
+  background-color: var(--blue-light);
   color: var(--text-color);
   width: 15%;
   display: block;
@@ -145,7 +146,7 @@ header > div {
 }
 
 .event-info-section {
-  background-color: var(--green-light);
+  background-color: var(--peach-light);
   padding-top: 10%;
 }
 
@@ -166,16 +167,14 @@ header > div {
   grid-template-columns: repeat(2, 1fr);
   width: 90%;
   margin: auto;
-  height: 55vh;
   margin-top: 7%;
-  margin-bottom: 0;
 }
 
 .RSPV-event-info {
   width: 90%;
   margin: auto;
   margin-top: 0;
-  background-color: var(--pink-dark);
+  background-color: var(--blue-light);
   color: var(--text-color);
   height: 6vh;
   display: block;
@@ -186,10 +185,11 @@ header > div {
 .when {
   background-color: #ffffff3e;
   padding-top: 5%;
+  height: 50vh;
 }
 
 .clock-icon-container {
-  height: 25%;
+  height: 20%;
 }
 
 .clock-icon-container > img {
@@ -199,29 +199,25 @@ header > div {
 
 .when-details > h1 {
   font-size: 3.25rem;
-  line-height: 3.25rem;
+  line-height: 4rem;
   margin: 0;
+  margin-top: 2%;
 }
 
 .when-details > p {
   margin: auto;
+  line-height: 1.5rem;
+  margin-bottom: 0;
 }
 
 .where {
   padding-top: 5%;
-  background-color: var(--green-dark);
-}
-
-.where h1 {
-  color: var(--green-light);
-}
-
-.where p {
-  color: var(--green-light);
+  background-color: var(--peach-dark-opacity);
+  height: 50vh;
 }
 
 .pin-icon-container {
-  height: 25%;
+  height: 20%;
 }
 
 .pin-icon-container > img {
@@ -231,7 +227,7 @@ header > div {
 
 .where-details > h1 {
   font-size: 3.25rem;
-  line-height: 3.25rem;
+  line-height: 4rem;
   margin: 0;
   margin-top: 2%;
 }
@@ -240,11 +236,17 @@ header > div {
   margin-top: 1%;
   width: 70%;
   margin: auto;
+  line-height: 1.5rem;
+  margin-bottom: 0;
 }
 
 .decorative {
+  background-color: var(--peach-light);
+}
+
+.decorative-img-container {
   min-height: 100vh;
-  background-image: url(images/HomeBG.png);
+  background-image: url(images/decoration.png);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -252,7 +254,7 @@ header > div {
 }
 
 footer {
-  background-color: var(--pink-light);
+  background-color: var(--peach-light);
   height: 70vh;
 }
 
@@ -281,8 +283,8 @@ input {
   background-color: transparent;
   border: none;
   padding-bottom: 3%;
-  border-bottom: 3px solid var(--green-dark);
-  color: var(--green-dark);
+  border-bottom: 3px solid var(--petro-dark);
+  color: var(--petro-dark);
   text-align: left;
   font-size: 0.8rem;
 }
@@ -297,7 +299,8 @@ input:focus {
   text-align: center;
   border: none;
   padding-top: 1%;
-  border-top: 3px solid var(--green-dark);
+  border-top: 3px solid var(--petro-dark);
+  cursor: pointer;
 }
 
 @media all and (max-width: 600px) {

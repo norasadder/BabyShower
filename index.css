@@ -79,7 +79,7 @@ header > div {
   background-color: var(--peach-light);
   padding-top: calc(var(--header-height) + 10px);
   padding-bottom: 2%;
-  width: 100vw;
+  width: 100%;
 }
 
 .home-Img-container {
@@ -88,7 +88,7 @@ header > div {
   background-size: contain;
   height: 80vh;
   margin: 0;
-  width: 100vw;
+  width: 100%;
 }
 
 .home-section > h1 {
@@ -356,7 +356,6 @@ input:focus {
 
   .container {
     height: 50%;
-    /* margin-top: 20%; */
   }
 
   .RSVP-home {

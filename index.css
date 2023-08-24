@@ -11,6 +11,7 @@
   --text-color: #fff;
   --dark-text-color-pink: #c38a75;
   --very-light-peach: #f5eee3;
+  --peach-mid: #e3bfafde;
 }
 
 * {
@@ -282,8 +283,8 @@ footer {
 
 .container {
   height: 70%;
-  width: 80%;
-  background-color: var(--peach-dark-opacity);
+  width: 60%;
+  background-color: var(--peach-mid);
   margin: auto;
 }
 
@@ -292,7 +293,7 @@ footer {
 }
 
 .questions-form {
-  width: 57%;
+  width: 90%;
   margin: auto;
   height: 15vh;
 }
@@ -341,6 +342,10 @@ input:focus {
   .decorative-img-container {
     background-size: contain;
     height: 60vh;
+  }
+
+  .container {
+    width: 80%;
   }
 }
 

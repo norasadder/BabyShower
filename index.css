@@ -7,11 +7,9 @@
   --petro-dark: #21495e;
   --peach-light: #f0e4d0;
   --peach-dark: #ac8272;
-  --peach-dark-opacity: #dcad99b1;
   --text-color: #fff;
   --dark-text-color-pink: #c38a75;
-  --very-light-peach: #f5eee3;
-  --peach-mid: #e3bfafde;
+  --peach-mid: #e3bfafdf;
 }
 
 * {
@@ -186,7 +184,7 @@ header > div {
 }
 
 .when {
-  background-color: #f4e2e29b;
+  background-color: #f0e4d0c6;
   padding-top: 5%;
   height: 50vh;
 }
@@ -218,7 +216,7 @@ header > div {
 
 .where {
   padding-top: 5%;
-  background-color: var(--peach-dark-opacity);
+  background-color: var(--peach-mid);
   height: 50vh;
 }
 
@@ -284,7 +282,7 @@ footer {
 .container {
   height: 70%;
   width: 60%;
-  background-color: var(--peach-mid);
+  background-color: #f0e4d0c6;
   margin: auto;
 }
 

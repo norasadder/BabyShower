@@ -140,7 +140,7 @@ header > div {
 
 .event-info-section {
   background-color: var(--peach-light);
-  background-image: url(images/footerBG.jpg);
+  background-image: url(images/marbleBG.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -263,7 +263,7 @@ header > div {
 footer {
   background-color: var(--peach-light);
   height: 90vh;
-  background-image: url(images/footerBG.jpg);
+  background-image: url(images/marbleBG.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;

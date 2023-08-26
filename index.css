@@ -1,20 +1,20 @@
 :root {
   --header-height: 80px;
   --title-height: 5vh;
-  --blue-light: #50757b;
-  --blue-dark: #2e4b5f;
-  --peach-light: #f0e4d0;
-  --peach-dark: #dcad99;
-  --text-color: #fff;
-  --peach-mid: #e3bfafdf;
-  --blue-very-light: #f8fbf6;
+  /* --blue-light: #99cdd8; */
+  --blue-light: #b3cbd5; 
+  --green-dark: #264740;
+  --green-light: #91b18d;
+  --peach-dark: #f0cfe0;
+  --text-color: #f3e9e0;
+  --purple: #dbcde7;
 }
 
 * {
   font-family: sans-serif;
   font-weight: light;
   text-decoration: none;
-  color: var(--peach-light);
+  color: var(--green-dark);
   text-align: center;
 }
 
@@ -34,7 +34,7 @@ body {
 }
 
 header {
-  background-color: var(--blue-light);
+  background-color: var(--green-light);
   position: fixed;
   top: 0;
   width: 100%;
@@ -74,14 +74,13 @@ header > div {
 }
 
 .home-section {
-  background-color: var(--blue-light);
+  background-color: var(--green-light);
   padding-top: calc(var(--header-height) + 10px);
   padding-bottom: 2%;
   width: 100%;
 }
 
 .home-Img-container {
-  background-image: url(images/HomeBG.png);
   background-repeat: no-repeat;
   background-size: contain;
   height: 80vh;
@@ -95,11 +94,11 @@ header > div {
   padding: 0;
   line-height: 6.2rem;
   margin: 0;
-  color: var(--peach-dark);
+  color: var(--text-color);
 }
 
 .invitation-p {
-  color: var(--blue-light);
+  color: var(--green-dark);
 }
 
 .slideshow-container {
@@ -125,6 +124,7 @@ header > div {
 .nameBabyShower-p {
   font-size: 1.5rem;
   margin: 0;
+  color:var(--text-color)
 }
 
 .RSVP-home {
@@ -138,8 +138,7 @@ header > div {
 }
 
 .event-info-section {
-  background-color: var(--peach-light);
-  background-image: url(images/marbleBG.jpg);
+  background-color: var(--green-light);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -158,7 +157,7 @@ header > div {
   width: 33%;
   margin: auto;
   line-height: 1.5rem;
-  color: var(--text-color);
+  color: var(--green-dark);
   font-weight: bolder;
 }
 
@@ -183,7 +182,7 @@ header > div {
 }
 
 .when {
-  background-color: #f0e4d0c6;
+  background-color: var(--purple);
   padding-top: 5%;
   height: 50vh;
 }
@@ -202,7 +201,7 @@ header > div {
   line-height: 4rem;
   margin: 0;
   margin-top: 2%;
-  color: var(--blue-dark);
+  color: var(--green-dark);
   margin-bottom: 30px;
 }
 
@@ -210,12 +209,12 @@ header > div {
   margin: auto;
   line-height: 1.5rem;
   margin-bottom: 0;
-  color: var(--blue-dark);
+  color: var(--green-dark);
 }
 
 .where {
   padding-top: 5%;
-  background-color: var(--peach-mid);
+  background-color: var(--peach-dark);
   height: 50vh;
 }
 
@@ -233,7 +232,7 @@ header > div {
   line-height: 4rem;
   margin: 0;
   margin-top: 2%;
-  color: var(--blue-dark);
+  color: var(--green-dark);
   margin-bottom: 30px;
 }
 
@@ -243,16 +242,16 @@ header > div {
   margin: auto;
   line-height: 1.5rem;
   margin-bottom: 0;
-  color: var(--blue-dark);
+  color: var(--green-dark);
 }
 
 .decorative {
-  background-color: var(--blue-light);
+  background-color: var(--green-light);
 }
 
 .decorative-img-container {
   height: 100vh;
-  background-image: url(images/decoration.png);
+  /* background-image: url(images/decoration.png); */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -284,9 +283,8 @@ header > div {
 }
 
 footer {
-  background-color: var(--peach-light);
+  background-color: var(--green-light);
   height: 90vh;
-  background-image: url(images/marbleBG.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -299,18 +297,18 @@ footer {
 .container > h1 {
   padding-top: 4%;
   margin: 0;
-  color: var(--blue-dark);
+  color: var(--green-dark);
 }
 
 .container {
   height: 70%;
-  width: 90%;
-  background-color: #f0e4d0c6;
+  width: 80%;
+  background-color: var(--peach-dark);
   margin: auto;
 }
 
 .container p {
-  color: var(--blue-dark);
+  color: var(--green-dark);
 }
 
 .questions-form {
@@ -333,8 +331,8 @@ input {
   background-color: transparent;
   border: none;
   padding-bottom: 3%;
-  border-bottom: 3px solid var(--blue-dark);
-  color: var(--blue-dark);
+  border-bottom: 3px solid var(--green-dark);
+  color: var(--green-dark);
   text-align: left;
   font-size: 0.8rem;
   width: 100%;
@@ -346,10 +344,11 @@ input:focus {
 }
 
 .sendButton {
-  width: 20%;
+  width: 10%;
   text-align: center;
-  border: none;
-  padding: 1%;
+  border: 3px solid var(--green-dark);
+  padding-top: 1%;
+  border-top: 3px solid var(--green-dark);
   cursor: pointer;
   margin: 0;
   background-color: var(--blue-light);

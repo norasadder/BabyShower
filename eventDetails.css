@@ -1,5 +1,9 @@
+* {
+  color: var(--blue-dark);
+}
+
 .upperSection {
-  background-color: var(--peach-light);
+  background-color: var(--blue-light);
   height: 35vh;
   margin-top: 5%;
   padding-top: var(--header-height);
@@ -9,16 +13,18 @@
   font-size: 1rem;
   line-height: 1.25rem;
   margin: 0;
+  color: var(--peach-light);
 }
 
 .upperSection > h1 {
+  color: var(--peach-light);
   font-size: 3rem;
   line-height: 4rem;
   margin: 1%;
 }
 
 .RSVP {
-  background-color: var(--blue-light);
+  background-color: var(--peach-dark);
   color: var(--text-color);
   width: 10%;
   display: block;
@@ -35,7 +41,7 @@
 }
 
 .event-details {
-  background-color: var(--very-light-peach);
+  background-color: var(--blue-very-light);
 }
 
 h2 {

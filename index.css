@@ -3,20 +3,18 @@
   --title-height: 5vh;
   --blue-light: #50757b;
   --blue-dark: #2e4b5f;
-  --petro-light: #7d9e9fa0;
-  --petro-dark: #21495e;
   --peach-light: #f0e4d0;
-  --peach-dark: #ac8272;
+  --peach-dark: #dcad99;
   --text-color: #fff;
-  --dark-text-color-pink: #c38a75;
   --peach-mid: #e3bfafdf;
+  --blue-very-light: #f8fbf6;
 }
 
 * {
   font-family: sans-serif;
   font-weight: light;
   text-decoration: none;
-  color: var(--blue-dark);
+  color: var(--peach-light);
   text-align: center;
 }
 
@@ -36,7 +34,7 @@ body {
 }
 
 header {
-  background-color: var(--peach-light);
+  background-color: var(--blue-light);
   position: fixed;
   top: 0;
   width: 100%;
@@ -61,10 +59,11 @@ header > div {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: var(--peach-light);
 }
 
 .RSVP-header {
-  background: var(--blue-light);
+  background: var(--peach-dark);
   width: 10%;
   height: 40%;
   padding: 5px;
@@ -75,7 +74,7 @@ header > div {
 }
 
 .home-section {
-  background-color: var(--peach-light);
+  background-color: var(--blue-light);
   padding-top: calc(var(--header-height) + 10px);
   padding-bottom: 2%;
   width: 100%;
@@ -96,7 +95,7 @@ header > div {
   padding: 0;
   line-height: 6.2rem;
   margin: 0;
-  color: var(--blue-light);
+  color: var(--peach-dark);
 }
 
 .invitation-p {
@@ -129,7 +128,7 @@ header > div {
 }
 
 .RSVP-home {
-  background-color: var(--blue-light);
+  background-color: var(--peach-dark);
   color: var(--text-color);
   width: 15%;
   display: block;
@@ -175,7 +174,7 @@ header > div {
   width: 90%;
   margin: auto;
   margin-top: 0;
-  background-color: var(--blue-light);
+  background-color: var(--peach-dark);
   color: var(--text-color);
   height: 6vh;
   display: block;
@@ -248,7 +247,7 @@ header > div {
 }
 
 .decorative {
-  background-color: var(--peach-light);
+  background-color: var(--blue-light);
 }
 
 .decorative-img-container {
@@ -258,6 +257,30 @@ header > div {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.registered-at {
+  background-color: var(--blue-light);
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.registered-at h2 {
+  margin: 0;
+  padding-top: 3%;
+}
+
+.registered-at div {
+  width: 30%;
+  margin: auto;
+  margin-top: 3%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.registered-at a {
+  cursor: pointer;
 }
 
 footer {
@@ -281,7 +304,7 @@ footer {
 
 .container {
   height: 70%;
-  width: 60%;
+  width: 90%;
   background-color: #f0e4d0c6;
   margin: auto;
 }
@@ -323,12 +346,14 @@ input:focus {
 }
 
 .sendButton {
-  width: 100%;
+  width: 20%;
   text-align: center;
   border: none;
-  padding-top: 1%;
-  border-top: 3px solid var(--blue-dark);
+  padding: 1%;
   cursor: pointer;
+  margin: 0;
+  background-color: var(--blue-light);
+  color: var(--text-color);
 }
 
 @media all and (max-width: 1000px) {
@@ -342,8 +367,8 @@ input:focus {
     height: 60vh;
   }
 
-  .container {
-    width: 80%;
+  .registered-at div {
+    width: 40%;
   }
 }
 
@@ -394,5 +419,13 @@ input:focus {
   .home-Img-container {
     background-size: contain;
     height: 30vh;
+  }
+
+  .registered-at {
+    height: 20vh;
+  }
+
+  .registered-at div {
+    width: 60%;
   }
 }

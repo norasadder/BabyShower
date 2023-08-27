@@ -63,7 +63,7 @@ header > div {
 }
 
 .RSVP-header {
-  background: var(--peach-dark);
+  background: var(--blue-light);
   width: 10%;
   height: 40%;
   padding: 5px;
@@ -128,7 +128,7 @@ header > div {
 }
 
 .RSVP-home {
-  background-color: var(--peach-dark);
+  background-color: var(--blue-light);
   color: var(--text-color);
   width: 15%;
   display: block;
@@ -173,7 +173,7 @@ header > div {
   width: 90%;
   margin: auto;
   margin-top: 0;
-  background-color: var(--peach-dark);
+  background-color: var(--blue-light);
   color: var(--text-color);
   height: 6vh;
   display: block;

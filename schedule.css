@@ -67,10 +67,10 @@ form > div > p {
 
 .submitBTN {
   background-color: var(--blue-light);
-  outline: none;
   height: 7vh;
-  border: none;
   color: var(--text-color);
+  text-align: center;
+  cursor: pointer;
 }
 
 .banner {

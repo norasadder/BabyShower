@@ -142,7 +142,7 @@ header > div {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 10%;
+  padding-top: 5%;
 }
 
 .event-info-section > h1 {
@@ -249,6 +249,7 @@ header > div {
   height: 40vh;
   display: flex;
   align-items: center;
+  padding-top: 150px;
 }
 
 .registered-at-container {
@@ -282,7 +283,7 @@ header > div {
 
 footer {
   background-color: var(--green-light);
-  height: 90vh;
+  /*height: 90vh;*/
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;

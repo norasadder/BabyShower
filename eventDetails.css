@@ -1,9 +1,9 @@
 * {
-  color: var(--blue-dark);
+  color: var(--green-dark);
 }
 
 .upperSection {
-  background-color: var(--blue-light);
+  background-color: var(--green-light);
   height: 35vh;
   margin-top: 5%;
   padding-top: var(--header-height);
@@ -13,35 +13,36 @@
   font-size: 1rem;
   line-height: 1.25rem;
   margin: 0;
-  color: var(--peach-light);
 }
 
 .upperSection > h1 {
-  color: var(--peach-light);
+  color: var(--text-color);
   font-size: 3rem;
   line-height: 4rem;
   margin: 1%;
 }
 
 .RSVP {
-  background-color: var(--peach-dark);
+  background-color: var(--blue-light);
   color: var(--text-color);
   width: 10%;
-  display: block;
-  margin: auto;
-  font-size: 0.8rem;
-  margin-top: 2%;
+  margin: 2% auto 3% auto;
+  font-size: 1em;
   padding: 5px;
-  margin-bottom: 3%;
+  display: block;
 }
 
 .RSPV2 {
-  margin-top: 5%;
-  margin-bottom: auto;
+  background-color: var(--blue-light);
+  color: var(--text-color);
+  width: 100%;
+  margin: 2% auto 0 auto;
+  font-size: 1rem;
+  padding: 5px;
 }
 
 .event-details {
-  background-color: var(--blue-very-light);
+  background-color: var(--green-light);
 }
 
 h2 {
@@ -50,21 +51,25 @@ h2 {
   margin-top: 0;
 }
 
-.event-details > div {
-  width: 55%;
-  margin: 0 auto 0 auto;
-  padding-top: 4%;
+.event-details-container {
+  padding-top: 2%;
+  background-color: var(--purple);
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
 }
 
-.event-details > div > p {
-  font-size: 0.8rem;
-  line-height: 1.2rem;
-  margin-top: 1%;
-  margin-bottom: 2%;
+.time-location {
+  padding: 2%;
+}
+
+.about-the-event {
+  padding: 2%;
 }
 
 .map {
-  width: 65%;
+  width: 90%;
   margin-top: 5%;
   margin-bottom: 3%;
   height: 45vh;

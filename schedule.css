@@ -5,20 +5,21 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  background-color: var(--blue-very-light);
+  background-color: var(--green-light);
 }
 
 .form-banner {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  width: 100%;
+  width: 90%;
+  background-color: var(--purple);
 }
 
 .form {
   display: flex;
   flex-direction: column;
-  width: 35%;
+  width: 40%;
   margin: 5%;
 }
 
@@ -30,10 +31,10 @@
   grid-auto-rows: auto;
 }
 
-.form form input {
+form input {
   width: 100%;
   display: block;
-  border: 3px solid var(--blue-light);
+  border: 3px solid var(--green-dark);
   font-size: 1rem;
   padding: 10px;
   box-sizing: border-box;
@@ -55,14 +56,14 @@
   display: block;
   width: 100%;
   margin-left: 0;
-  color: var(--blue-light);
+  color: var(--green-dark);
   margin-top: 0;
 }
 
 form > div > p {
   margin: 0;
   text-align: left;
-  color: var(--blue-light);
+  color: var(--green-dark);
 }
 
 .submitBTN {
@@ -71,11 +72,12 @@ form > div > p {
   color: var(--text-color);
   text-align: center;
   cursor: pointer;
+  border: 0px;
 }
 
 .banner {
   padding: 1%;
-  border: 3px solid gray;
+  border: 3px solid var(--green-dark);
   width: 17%;
   height: 8%;
   margin-top: 5%;
@@ -86,7 +88,7 @@ form > div > p {
   font-weight: lighter;
   font-size: 1rem;
   margin: 0;
-  color: var(--blue-dark);
+  color: var(--green-dark);
 }
 
 .banner > p {
@@ -94,7 +96,7 @@ form > div > p {
   margin: 0;
   line-height: 1.25rem;
   text-align: start;
-  color: var(--blue-dark);
+  color: var(--green-dark);
 }
 
 @media all and (max-width: 1000px) {

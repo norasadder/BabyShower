@@ -4,9 +4,9 @@
 
 .upperSection {
   background-color: var(--green-light);
-  height: 35vh;
-  margin-top: 5%;
-  padding-top: var(--header-height);
+  height: 21vh;
+  margin-top: 3%;
+  padding-top: 90px;
 }
 
 .upperSection > p {
